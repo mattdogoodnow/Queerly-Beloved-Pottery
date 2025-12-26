@@ -1,7 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/charities", "destination": "/charities.html" }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
