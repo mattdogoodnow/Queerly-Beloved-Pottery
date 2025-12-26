@@ -474,7 +474,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
-    align-items: center;
+    align-items: start;
 }
 
 .about-image img {
@@ -523,7 +523,6 @@ body {
 
 .about-content .closing {
     font-style: italic;
-    margin-top: var(--spacing-lg);
 }
 
 /* Charities Page */
@@ -555,6 +554,19 @@ body {
     color: var(--color-text);
     max-width: 800px;
     margin: 0 auto;
+}
+
+.donation-total {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    margin-top: var(--spacing-md);
+    background: linear-gradient(135deg, #a0522d 0%, #8a5534 50%, #6d4229 100%);
+    color: white;
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(138, 85, 52, 0.3);
+    letter-spacing: 0.5px;
 }
 
 .charity-card {
