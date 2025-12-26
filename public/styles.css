@@ -194,7 +194,7 @@ main {
 }
 
 /* Hover effect for Nav Links (Desktop) */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     .nav-links a:hover::after {
         width: 100%;
     }
@@ -218,7 +218,7 @@ main {
 }
 
 /* Mobile Navigation */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     .hamburger {
         display: flex;
         -webkit-tap-highlight-color: transparent;
@@ -264,6 +264,9 @@ main {
         bottom: -8px;
         height: 3px;
     }
+}
+
+@media (max-width: 767px) {
 
     .footer-links {
         flex-direction: column;
@@ -493,7 +496,7 @@ body {
     opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
     .footer-links a:hover::after {
         width: 100%;
     }
@@ -763,13 +766,6 @@ body {
         height: 60px;
     }
 
-    .nav-links {
-        gap: var(--spacing-lg);
-    }
-
-    .nav-links a {
-        font-size: 1.125rem;
-    }
 
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -813,7 +809,15 @@ body {
 }
 
 /* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
+    .nav-links {
+        gap: var(--spacing-lg);
+    }
+
+    .nav-links a {
+        font-size: 1.125rem;
+    }
+
     .hero {
         padding: var(--spacing-xl);
     }
