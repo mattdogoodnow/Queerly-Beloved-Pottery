@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queerly Beloved Pottery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Queerly Beloved Pottery Logo">
+            </a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="charities.html">charities</a></li>
+                <li><a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank"
+                        rel="noopener noreferrer">shop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>queerly beloved pottery</h1>
+                <p class="hero-text">handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of
+                    faith</p>
+                <div class="hero-buttons">
+                    <a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-shop">shop</a>
+                    <a href="#about" class="btn btn-about">about</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="process-2.jpg" alt="Queerly Beloved Pottery Process">
+                </div>
+                <div class="product-item">
+                    <img src="product-new-1.jpg" alt="Queerly Beloved Pottery Product">
+                </div>
+                <div class="product-item">
+                    <img src="process-1.jpg" alt="Queerly Beloved Pottery Process">
+                </div>
+                <div class="product-item">
+                    <img src="product-4.jpg" alt="Queerly Beloved Pottery Product">
+                </div>
+                <div class="product-item">
+                    <img src="product-new-2.jpg" alt="Queerly Beloved Pottery Product">
+                </div>
+                <div class="product-item">
+                    <img src="process-3.jpg" alt="Queerly Beloved Pottery Product">
+                </div>
+            </div>
+        </section>
+
+        <section class="mission">
+            <div class="mission-container">
+                <div class="mission-item">
+                    <h2>what i do:</h2>
+                    <p>i make small-batch, handmade pottery that centers queerness while juxtaposing it with images and
+                        phrases from religious traditions. each piece is thrown, stamped and glazed by hand, created to
+                        integrate into the lives of queer and trans folks as a quiet act of protest and healing.</p>
+                </div>
+                <div class="mission-item">
+                    <h2>why i do it:</h2>
+                    <p>my work is a protest. full stop. the studio is where i fight back. i make pieces people can live
+                        with as both resistance and care, and am thrilled to donate everything i can to organizations
+                        serving and protecting LGBTQIA2S+ youth of faith</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-banner">
+            <div class="banner-container">
+                <p>to date, i have been able to donate $2,254.06 to organizations supporting LGBTQIA2S+ youth of faith
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="charities.html">charities</a>
+                <a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank"
+                    rel="noopener noreferrer">shop</a>
+            </div>
+
+            <div class="footer-info">
+                <p>queerly beloved pottery is an artist-run project and not a nonprofit organization.</p>
+                <p>queerly beloved pottery is committed to accessibility. if you run into any difficulty using this
+                    site, please contact me at <a
+                        href="mailto:katy@queerlybelovedpottery.com">katy@queerlybelovedpottery.com</a></p>
+            </div>
+
+            <div class="footer-copyright">
+                <p>Copyright © 2025 Queerly Beloved Pottery - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
