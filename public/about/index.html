@@ -4,25 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queerly Beloved Pottery</title>
+    <title>About - Queerly Beloved Pottery</title>
     <meta name="description"
         content="handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of faith">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.queerlybelovedpottery.com/">
-    <meta property="og:title" content="Queerly Beloved Pottery">
+    <meta property="og:url" content="https://www.queerlybelovedpottery.com/about.html">
+    <meta property="og:title" content="About - Queerly Beloved Pottery">
     <meta property="og:description"
         content="handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of faith">
     <meta property="og:image" content="https://www.queerlybelovedpottery.com/katy-studio.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.queerlybelovedpottery.com/">
-    <meta property="twitter:title" content="Queerly Beloved Pottery">
-    <meta property="twitter:description"
-        content="handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of faith">
-    <meta property="twitter:image" content="https://www.queerlybelovedpottery.com/katy-studio.jpg">
 
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/favicon.png">
@@ -46,8 +38,8 @@
                 <span></span>
             </button>
             <ul class="nav-links">
-                <li><a href="/" class="active">home</a></li>
-                <li><a href="/about">about</a></li>
+                <li><a href="/">home</a></li>
+                <li><a href="/about" class="active">about</a></li>
                 <li><a href="/charities">charities</a></li>
                 <li><a href="mailto:katy@queerlybelovedpottery.com">contact</a></li>
                 <li><a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank"
@@ -66,72 +58,57 @@
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>queerly beloved pottery</h1>
-                <p class="hero-text">handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of
-                    faith</p>
-                <div class="hero-buttons">
-                    <a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-shop">shop</a>
-                    <a href="/about" class="btn btn-about">about</a>
+        <section class="about-hero">
+            <div class="about-container">
+                <div class="about-intro">
+                    <span class="page-tag">about</span>
+                    <h2>hi, i'm katy</h2>
+                    <p class="intro-text">the gay hands behind the gay pieces.</p>
+                    <p>i grew up catholic in ohio, planning to study theology and maybe even become a nun. but when i
+                        learned how the church demonized and silenced queer folks, my world shifted. i left the church
+                        and began carving out a different kind of faith practice. one grounded in art, protest, and
+                        queerness.</p>
                 </div>
-            </div>
-        </section>
-
-        <section class="featured-products">
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="/process-2.jpg" alt="Queerly Beloved Pottery Process">
+                <div class="about-image">
+                    <img src="/katy-studio.jpg" alt="Katy in the pottery studio">
                 </div>
-                <div class="product-item">
-                    <img src="/product-new-1.jpg" alt="Queerly Beloved Pottery Product">
+                <div class="about-body">
+                    <p>today, i live openly as a proud lesbian, creating pieces that carry both reverence and
+                        resistance.</p>
+                    <p>queerly beloved pottery was born from that space: where queerness, faith, and community meet.</p>
+                    <p>from the start, i've chosen to donate the profits from this work to organizations supporting
+                        queer &amp; trans youth of faith.</p>
+                    <p>my time in the studio is given freely. each piece reflects not just craft, but care and
+                        resistance shaped in clay.</p>
+                    <p class="closing">this is sacred work. thank you for being part of it.</p>
                 </div>
-                <div class="product-item">
-                    <img src="/process-1.jpg" alt="Queerly Beloved Pottery Process">
-                </div>
-                <div class="product-item">
-                    <img src="/product-4.jpg" alt="Queerly Beloved Pottery Product">
-                </div>
-                <div class="product-item">
-                    <img src="/product-new-2.jpg" alt="Queerly Beloved Pottery Product">
-                </div>
-                <div class="product-item">
-                    <img src="/process-3.jpg" alt="Queerly Beloved Pottery Product">
-                </div>
-            </div>
-        </section>
-
-        <section class="mission">
-            <div class="mission-container">
-                <div class="mission-item">
-                    <h2>what i do:</h2>
-                    <p>i make small-batch, handmade pottery that centers queerness while juxtaposing it with images and
-                        phrases from religious traditions. each piece is thrown, stamped and glazed by hand, created to
-                        integrate into the lives of queer and trans folks as a quiet act of protest and healing.</p>
-                </div>
-                <div class="mission-item">
-                    <h2>why i do it:</h2>
-                    <p>my work is a protest. full stop. the studio is where i fight back. i make pieces people can live
-                        with as both resistance and care, and am thrilled to donate everything i can to organizations
-                        serving and protecting LGBTQIA2S+ youth of faith</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="donation-banner">
-            <div class="banner-container">
-                <p>to date, i have been able to donate $2,254.06 to organizations supporting LGBTQIA2S+ youth of faith
-                </p>
             </div>
         </section>
     </main>
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <a href="/" class="active">home</a>
-                <a href="/about">about</a>
+                <a href="/">home</a>
+                <a href="/about" class="active">about</a>
                 <a href="/charities">charities</a>
                 <a href="mailto:katy@queerlybelovedpottery.com">contact</a>
                 <a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank"
@@ -168,25 +145,6 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-
-    <script>
-        // Mobile Navigation Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
     </script>
 </body>
 

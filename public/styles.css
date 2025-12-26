@@ -201,11 +201,14 @@ main {
 }
 
 /* Social Icons */
-.nav-icon,
 .footer-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+}
+
+.nav-icon {
+    display: none;
 }
 
 .nav-icon::after,
@@ -220,6 +223,12 @@ main {
         display: flex;
         -webkit-tap-highlight-color: transparent;
         outline: none;
+    }
+
+    .nav-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links {
