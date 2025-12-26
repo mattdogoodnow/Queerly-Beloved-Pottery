@@ -202,8 +202,6 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 0 !important;
-    /* Remove spacing for underline */
 }
 
 .nav-icon::after,
@@ -261,7 +259,7 @@ main {
     }
 
     .logo img {
-        height: 80px;
+        height: 60px;
     }
 
     .footer-links a {
@@ -407,7 +405,7 @@ body {
 /* Mission Statement Section */
 .mission {
     padding: var(--spacing-lg) var(--spacing-md);
-    background-color: var(--color-background);
+    background-color: #f3e9e2;
 }
 
 .mission-container {
@@ -731,7 +729,7 @@ body {
     }
 
     .logo img {
-        height: 80px;
+        height: 60px;
     }
 
     .nav-links {
@@ -790,7 +788,7 @@ body {
     }
 
     .logo img {
-        height: 100px;
+        height: 80px;
     }
 
     .nav-container {

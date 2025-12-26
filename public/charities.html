@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charities - Queerly Beloved Pottery</title>
+    <meta name="description"
+        content="handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of faith">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.queerlybelovedpottery.com/charities.html">
+    <meta property="og:title" content="Charities - Queerly Beloved Pottery">
+    <meta property="og:description"
+        content="handmade pottery by an ex-catholic dyke, raising funds for Queer and trans youth of faith">
+    <meta property="og:image" content="https://www.queerlybelovedpottery.com/katy-studio.jpg">
+
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +41,7 @@
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about</a></li>
                 <li><a href="charities.html" class="active">charities</a></li>
+                <li><a href="mailto:katy@queerlybelovedpottery.com">contact</a></li>
                 <li><a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank"
                         rel="noopener noreferrer">shop</a></li>
                 <li><a href="https://www.instagram.com/queerlybelovedpottery/" target="_blank" rel="noopener noreferrer"
@@ -101,6 +115,7 @@
                 <a href="index.html">home</a>
                 <a href="about.html">about</a>
                 <a href="charities.html">charities</a>
+                <a href="mailto:katy@queerlybelovedpottery.com">contact</a>
                 <a href="https://www.etsy.com/shop/queerlyblovedpottery" target="_blank"
                     rel="noopener noreferrer">shop</a>
                 <a href="https://www.instagram.com/queerlybelovedpottery/" target="_blank" rel="noopener noreferrer"
@@ -122,10 +137,14 @@
             </div>
 
             <div class="footer-copyright">
-                <p>Copyright © 2025 Queerly Beloved Pottery - All Rights Reserved.</p>
+                <p>Copyright &copy; <span id="year"></span> Queerly Beloved Pottery - All Rights Reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
     <script>
         // Mobile Navigation Toggle
