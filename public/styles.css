@@ -589,7 +589,7 @@ body {
 .about-intro p {
     font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.8;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     color: #faf8f5;
 }
 
@@ -611,7 +611,7 @@ body {
 .about-body p {
     font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.8;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     color: #faf8f5;
 }
 
@@ -789,7 +789,7 @@ body {
             "image intro"
             "image body";
         column-gap: var(--spacing-xl);
-        row-gap: var(--spacing-sm);
+        row-gap: 0;
     }
 
     .about-intro {
